@@ -1,0 +1,3 @@
+add @intrinsic ~sharp ->instant : fallback_to_subtract | negate_mode;
+push eax @fast ~direct;
+alloc memory @heap ~persistent;
