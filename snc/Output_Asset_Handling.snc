@@ -1,0 +1,10 @@
+render asset {
+    shape: "sphere";
+    color: "plasma-pink";
+    style: shaded;
+}
+
+file logFile {
+    path: "logs/sys.out";
+    write "Boot complete.";
+}
