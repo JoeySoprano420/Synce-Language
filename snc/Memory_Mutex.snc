@@ -1,0 +1,5 @@
+mutex lockSync;
+alloc chunk[256];
+free chunk;
+await pingRemote;
+sync checkpoint5;
