@@ -1,0 +1,11 @@
+use std.math;
+
+let x = 7;
+val y: int = 3;
+
+func power(base: int, exponent: int): int {
+    return base ** exponent;
+}
+
+let z = power(x, y);
+print z;
