@@ -31,3 +31,68 @@ void save_binary(const std::vector<unsigned char>& bin, const std::string& filen
     }
     out.close();
 }
+
+std::vector<unsigned char> load_binary(const std::string& filename\) {
+    std::ifstream in(filename, std::ios::binary);
+    if (!in) {
+        throw std::runtime_error("Failed to open binary file: " + filename);
+    }
+    return std::vector<unsigned char>((std::istreambuf_iterator<char>(in)), {});
+}
+
+std::string read_file(const std::string& filename) {
+	std
+		::ifstream file(filename);
+    if (!file) {
+        throw std::runtime_error("Failed to open file: " + filename);
+    }
+    std::stringstream buffer;
+    buffer << file.rdbuf();
+	return buffer.str();
+}
+
+void write_file(const std::string& filename, const std::string& content) {
+    std::ofstream file(filename);
+    if (!file) {
+        throw std::runtime_error("Failed to open file for writing: " + filename);
+    }
+    file << content;
+    file.close();
+}
+
+std::string get_temp_filename() {
+    static int counter = 0;
+    return "output/tmp_" + std::to_string(counter++) + ".s";
+}
+
+std::string get_temp_obj_filename() {
+    static int counter = 0;
+    return "output/tmp_" + std::to_string(counter++) + ".o";
+}
+
+std::string get_temp_bin_filename() {
+    static int counter = 0;
+    return "output/tmp_" + std::to_string(counter++) + ".bin";
+}
+
+std::string get_temp_asm_filename() {
+    static int counter = 0;
+    return "output/tmp_" + std::to_string(counter++) + ".asm";
+}
+
+std::string get_temp_txt_filename() {
+    static int counter = 0;
+    return "output/tmp_" + std::to_string(counter++) + ".txt";
+}
+
+std::string get_temp_json_filename() {
+    static int counter = 0;
+    return "output/tmp_" + std::to_string(counter++) + ".json";
+}
+
+std::string get_temp_log_filename() {
+    static int counter = 0;
+    return "output/tmp_" + std::to_string(counter++) + ".log";
+}
+
+
