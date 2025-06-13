@@ -1,0 +1,3 @@
+@echo off
+echo [SYNCE BUILD] Building Synce compiler...
+make
