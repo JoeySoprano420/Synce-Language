@@ -1,0 +1,35 @@
+AOTFrameEngine/
+├── include/
+│   ├── lexer.h
+│   ├── parser.h
+│   ├── ir.h
+│   ├── ast.h
+│   ├── codegen.h
+│   ├── jit.h
+│   ├── fsm.h
+│   ├── pool.h
+│   ├── audio.h
+│   ├── render.h
+│   ├── path.h
+│   └── engine.h
+├── src/
+│   ├── lexer.cpp
+│   ├── parser.cpp
+│   ├── ir.cpp
+│   ├── ast.cpp
+│   ├── codegen.cpp
+│   ├── jit.cpp
+│   ├── fsm.cpp
+│   ├── pool.cpp
+│   ├── audio.cpp
+│   ├── render.cpp
+│   ├── path.cpp
+│   └── main.cpp
+├── shaders/
+│   ├── default.vert
+│   └── default.frag
+├── assets/
+│   └── preload.octir
+├── Makefile
+├── AOTFrameEngine.sln
+└── README.md
