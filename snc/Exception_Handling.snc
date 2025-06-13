@@ -1,0 +1,6 @@
+try {
+    mov result, eax;
+} catch error {
+    print "Error occurred.";
+    throw;
+}
