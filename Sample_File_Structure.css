@@ -1,0 +1,11 @@
+project/
+├── main.synce
+├── std/
+│   └── math.synce
+├── shaders/
+│   └── plasma.shader
+├── out/
+│   ├── main.asm
+│   ├── main.ir.oct
+│   ├── main.ast.hex
+│   └── main.bin
