@@ -1,0 +1,6 @@
+if flag == true {
+    jump checkpoint1;
+}
+while value < max {
+    inc value;
+}
