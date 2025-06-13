@@ -1,0 +1,6 @@
+enum RenderMode { FLAT, SMOOTH, WIREFRAME };
+table ShaderSettings {
+    name: string;
+    precision: float;
+    active: bool;
+}
