@@ -1,0 +1,12 @@
+procedure computeSum(arg1: num, arg2: num) {
+    let result = arg1 + arg2;
+    return result;
+}
+
+func checkFlag(value: int): bool {
+    if value == 1 {
+        return true;
+    } else {
+        return false;
+    }
+}
