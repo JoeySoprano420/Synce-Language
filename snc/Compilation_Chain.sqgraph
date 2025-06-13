@@ -1,0 +1,6 @@
+| Stage   | Format            | Output Example                  |
+| ------- | ----------------- | ------------------------------- |
+| **AOT** | NASM Assembly     | `mov eax, 5` → `B8 05 00 00 00` |
+| **IR**  | Octal Code        | `push eax` → `062`              |
+| **AST** | Hex Structure     | `assign` → `0xA4B3`             |
+| **JIT** | Binary Executable | `10011000`                      |
