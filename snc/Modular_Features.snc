@@ -1,0 +1,5 @@
+module MathLib {
+    include std.math;
+    use shaders;
+    export compute;
+}
