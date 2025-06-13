@@ -237,3 +237,30 @@ Real octal/hex symbol table
 
 
 
+# AOTFrameEngine
+
+A solid-state, AOT + JIT, full-frame compilation engine for high-performance, real-time, immersive multimedia software.  
+**Features:** Finite State Machines, Node Pooling, SIMD optimization, NASM-level audio/video, OpenGL/Vulkan ready.
+
+## Build
+
+- Open `AOTFrameEngine.sln` in Visual Studio 2022 (Windows x64), or  
+- `make` (with MinGW/MSYS2), or  
+- Compile `src/*.cpp` with your preferred C++17+ toolchain
+
+## Run
+
+`AOTFrameEngine.exe [script.octir]`
+
+---
+
+**Modules:**
+- src/lexer.cpp, parser.cpp, ir.cpp, ast.cpp, codegen.cpp, jit.cpp, fsm.cpp, pool.cpp, audio.cpp, render.cpp, path.cpp, main.cpp
+- include/*.h
+
+---
+
+
+
+
+
